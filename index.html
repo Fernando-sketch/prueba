@@ -18,12 +18,22 @@
             <a href="https://www.tecnm.mx/" target="_blank"><img class="img-tecnm" src="imagenes/tecnm.jpg" alt=""></a>
             <a href="https://www.cenidet.tecnm.mx/" target="_blank"><img class="img-cenidet" src="imagenes/cenidet.jpg" alt=""></a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#"><i class="fas fa-home"></i>Inicio</a></li>
-                <li><a href="#"><i class="fas fa-file-alt"></i>Formularios</a></li>
-                <li><a href="#"><i class="fas fa-user-circle"></i></i>Iniciar sesión</a></li>
-                <li><a href="#"><i class="fas fa-envelope"></i></i>Contacto</a></li>
+        <span class="nav-bar">
+            <div class="btn-menu" id="btnMenu"><i class="fas fa-bars"></i>Menú</div>
+        </span>
+        <nav class="main-nav">
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="#" class="menu__link"><i class="fas fa-home"></i>Inicio</a></li>
+                <li class="menu__item container-submenu">
+                    <a href="#" class="menu__link btn-submenu"><i class="fas fa-file-alt"></i> Formularios <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li class="menu__item"><a href="#" class="menu__link">COVID-19, neumonía viral y neumonía bacterina</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Transtorno por déficit de atención e hiperactividad</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Lorem ipsum dolor sit amet consectetur</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a href="#" class="menu__link"><i class="fas fa-user-circle"></i></i>Iniciar sesión</a></li>
+                <li class="menu__item"><a href="#" class="menu__link"><i class="fas fa-envelope"></i></i>Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -62,5 +72,6 @@
             <a href="#" class="btn btn--right">Colaborar en el proyecto</a>
         </div>
     </div>
+    <script src="menu.js"></script>
 </body>
 </html>
