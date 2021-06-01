@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logos-left">
+            <a href="https://www.gob.mx/" target="_blank"><img class="img-gob" src="../COVID-19/imagenes/gob.png" alt=""></a>
+            <a href="https://www.gob.mx/sep" target="_blank"><img class="img-sep" src="../COVID-19/imagenes/sep.png" alt=""></a>
+        </div>
+        <div class="logos-right">
+            <a href="https://www.tecnm.mx/" target="_blank"><img class="img-tecnm" src="../COVID-19/imagenes/tecnm.jpg" alt=""></a>
+            <a href="https://www.cenidet.tecnm.mx/" target="_blank"><img class="img-cenidet" src="../COVID-19/imagenes/cenidet.jpg" alt=""></a>
+        </div>
+        <span class="nav-bar">
+            <div class="btn-menu" id="btnMenu"><i class="fas fa-bars"></i>Menú</div>
+        </span>
+        <nav class="main-nav">
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="#" class="menu__link"><i class="fas fa-home"></i>Inicio</a></li>
+                <li class="menu__item container-submenu">
+                    <a href="#" class="menu__link btn-submenu"><i class="fas fa-file-alt"></i> Formularios <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li class="menu__item"><a href="#" class="menu__link">COVID-19, neumonía viral y neumonía bacterina</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Transtorno por déficit de atención e hiperactividad</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Lorem ipsum dolor sit amet consectetur</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a href="#" class="menu__link"><i class="fas fa-user-circle"></i></i>Iniciar sesión</a></li>
+                <li class="menu__item"><a href="#" class="menu__link"><i class="fas fa-envelope"></i></i>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <nav class="guide">
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i></a></li>
+                <li><i class="fas fa-angle-right"></i></li>
+                <li><a href="#">TDAH</a></li>
+                <li><i class="fas fa-angle-right"></i></li>
+                <li><a href="#">Formulario</a></li>
+            </ul>
+        </nav>
+        <h1>Entrevista a padres</h1>
+        <div class="section">
+            <div class="section__name">Datos personales</div>
+            <div class="section__name">Antecedentes personales no patológicos</div>
+            <div class="section__name">Antecedentes personales patológicos</div>
+            <div class="section__name">Antecedentes pre-peri y postnatales</div>
+            <div class="section__name">Historia del desarrollo</div>
+            <div class="section__name">Antecedentes escolares</div>
+            <div class="section__name">Dinámica familiar</div>
+            <div class="section__name">Aspectos de personalidad y/o emocionales</div>
+        </div>
+        <form class="tdah-form">
+            <div class="tdah-form__datos-personales" id="1">
+                <div class="input-group input-group--grey">
+                    <label class="input-group__label" for="">Nombre:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group">
+                    <label class="input-group__label" for="">Fecha:</label>
+                    <input class="input-group__input" type="date">
+                </div>
+                <div class="input-group input-group--grey">
+                    <label class="input-group__label" for="">Sexo:</label>
+                    <div class="input-group__input">
+                        <input type="radio" name="sexo">Masculino
+                        <input type="radio" name="sexo">Femenino
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label class="input-group__label" for="">Fecha de nacimiento:</label>
+                    <input class="input-group__input" type="date">
+                </div>
+                <div class="input-group input-group--grey">
+                    <label class="input-group__label" for="">Lugar de nacimiento:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group">
+                    <label class="input-group__label" for="">Lateralidad:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group input-group--grey">
+                    <label class="input-group__label" for="">Antecedentes de zurdería:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group">
+                    <label class="input-group__label" for="">Escolaridad:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group input-group--grey">
+                    <label class="input-group__label" for="">Familiar responsable:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group">
+                    <label class="input-group__label" for="">Nombre del padre:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group input-group--grey">
+                    <label class="input-group__label" for="">Edad:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group">
+                    <label class="input-group__label" for="">Ocupación:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group input-group--grey">
+                    <label class="input-group__label" for="">Escolaridad:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group">
+                    <label class="input-group__label" for="">Ciudad:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group input-group--grey">
+                    <label class="input-group__label" for="">Teléfono:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group">
+                    <label class="input-group__label" for="">Teléfono de oficina:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group input-group--grey">
+                    <label class="input-group__label" for="">Familiar responsable:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group">
+                    <label class="input-group__label" for="">Nombre de la madre:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group input-group--grey">
+                    <label class="input-group__label" for="">Edad:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group">
+                    <label class="input-group__label" for="">Ocupación:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group input-group--grey">
+                    <label class="input-group__label" for="">Escolaridad:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group">
+                    <label class="input-group__label" for="">Ciudad:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group input-group--grey">
+                    <label class="input-group__label" for="">Teléfono:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group">
+                    <label class="input-group__label" for="">Teléfono de oficina:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <div class="input-group input-group--grey">
+                    <label class="input-group__label" for="">Estado civil de los padres:</label>
+                    <div class="input-group__input">
+                        <input type="radio" name="estado-civil">Soltero
+                        <input type="radio" name="estado-civil">Casado
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label class="input-group__label" for="">Desde:</label>
+                    <input class="input-group__input" type="text">
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            
+            <div class="" id="2">
+                <label for="">Antecedentes personales no patológicos</label>
+                <br>
+                <label for="">Vive en: </label> 
+                  <input type="radio" name="hogar">Casa
+                  <input type="radio" name="hogar">Departamento
+                  <input type="radio" name="hogar">Cuarto
+                  <input type="radio" name="hogar">Otro<input type="text">
+                <label for="">El lugar es:</label>
+                 <input type="radio" name="lugar">Propio
+                 <input type="radio" name="lugar">Rentado
+                 <input type="radio" name="lugar">Prestado
+                <label for="">¿Con cuáles servicios cuenta?</label>
+                 <input type="text">
+                <label for="">Lugar que ocupa el niño en la familia:</label><input type="text">
+                <label for="">¿Tiene habitación propia o la comparte?:</label><input type="text">
+                <label for="">¿De dónde es originaria su familia?:</label><input type="text">
+                <label for="">Ingreso familiar mensual:</label><input type="text"><label for="">¿Quiénes contribuyen</label><input type="text">
+                <label for="">El niño depende económicamente de: </label> <input type="text">
+                <br>
+                <label for="">Número de personas que viven en la casa:</label><input type="text"><label for="">Familiares que viven en la casa:</label><input type="text">
+                <table border="1">
+                    <tr>
+                     <th>Parentesco</th> 
+                     <th>   Nombre   </t> 
+                     <th>Edad</th> 
+                     <th>  Escolaridad  </th> 
+                     <th>   Ocupación  </th>   
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>      
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>      
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>      
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>      
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>      
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <label for="">Juegos o actividades preferidas y/o preferidos:</label><input type="text">
+                <label for="">Juguetes preferidos:</label><input type="text">
+                <label for="">Descripción del tiempo libre y pasatiempos:</label>
+                 <input type="text">
+                 
+                <label for="">¿Realiza actividades extraescolares?:</label><input type="text">
+                <label for="">¿Tiene amigos?:</label><input type="text"><label for="">¿Cuántos?:</label><input type="text"><label for="">¿De dónde los conoce?:</label><input type="text">
+                <label for="">¿Sale con ellos?:</label><input type="text"><label for="">¿Con qué frecuencia?:</label><input type="text">
+                <br>
+                <br>
+            </div>
+            
+            <div class="" id="3">
+                     <!-- ESTA ES MI PARTE -->
+            <label for="">Antecedentes personales patológicos </label>
+            <div><p>Enfermedades que haya presentado a lo largo de su vida(anotar edad, desarrollo y tx) </p>  </div>
+             <div><table style="width: 25%">
+         <tr>
+                   <td>Meningitis</td> 
+                   <td><input type="radio" name="Meningitis"></td>
+                   <td>Asma</td> 
+                   <td> <input type="radio" name="Asma"></td>
+                   <td>Poliomielitis</td>
+                   <td><input type="radio" name="Poliomielitis"> </td>
+          </tr>
+                <tr>
+                    <td>Encefalitis</td>
+                   <td><input type="radio" name="Encefalitis"></td>
+                   <td>Varicela</td> 
+                   <td> <input type="radio" name="Varicela"> </td>
+                   <td>Apnea</td>
+                   <td><input type="radio" name="Apnea"> </td>
+                </tr>
+        <tr>
+                 <td>Cáncer</td> 
+                 <td><input type="radio" name="Cáncer"> </td>
+                 <td>Sarampión</td> 
+                 <td>  <input type="radio" name="Sarampión"> </td>
+                 <td>Epilepsia</td>
+                 <td>  <input type="radio" name="Epilepsia"> </td>
+                
+</table>
+</div>
+            <div><label>Otra</label> <input type="text" name="Otra"> </div> 
+            <div><label>¿Actualmente está enfermo?</label><input type="text" name="Pregunta"> </div>
+            <div><label>Tratamiento</label><input type="text" name="Tratamiento">Tratamiento</div>
+            <div><label>Ha tenido:</label> <input type="radio" name="Rad1">Golpes en la cabeza o médula espinal<input type="radio" name="Rad2">Alergias> <input type="radio" name="Rad3">Tumores></div>
+            <div><label>Especificar:</label><input type="text" name="Especificar"> </div>
+            <div><label>Enfermedades neorológicas(parálisis,hidrocefálea,etc)</label> <input type="text" name="Enfermedades"> </div>
+            <div><label>Alteraciones psicológicas o psiquiátras(depresión,etc) </label><input type="text" name="Alteraciones"></div>
+            <div><label>¿Presenta secuelas?</label><input type="text" name=""> <label>¿De qué tipo?  </label><input type="text" name=""></div>
+            <div><label>Ha tenido:</label><input type="radio" name="">Temperatura mayor a los 40°<input type="radio" name="">Convulsiones <input type="radio" name="">Perdida de la conciencia </div>
+            <div> <label>Especificar:</label> <input type="text" name="">  </div>
+            <div> <label>Presenta problemas de: </label> 
+            <div> <label>Visión </label> <input type="text" name=""> <label>¿Usa o requiere lentes?<input type="text" name=""> <label>¿Desde cuándo? </label> <input type="text" name=""></div> 
+            <div> <label>Motricidad </label> <input type="text" name=""> <label>¿Usa o requiere aparatos ortopédicos?<input type="text" name=""> <label>¿Desde cuándo? </label> <input type="text" name=""></div> 
+            <div> <label>Medicamentos que toma actualmente </label> </div>
+            <div> <input type= "text" name=""> <label>posología </label> <input type="tetx" name=""> </div>
+            <div> <label>¿Desde cuándo? </label> <input type="text" name="">   <label>¿para qué la toma?</label> <input type="text" name=""></div>
+            <div> <label>Reacciones adversas</label> <input type="text" name=""> </div> 
+           
+            <!-- AQUI TERMINA  -->
+            <div class="" id="4">
+                <label for="">Antecedentes Pre-Peri y Postnatales</label> 
+                <br> 
+                <label for="">Edad de los padres al nacer el niño/a:</label> <label for="">Madre:</label><input type="text">  <label for="">Padre:</label><input type="text">  
+                <label for="">Padres:</label> 
+                 <input type="radio" name="situacion">Juntos
+                 <input type="radio" name="situacion">Separados
+                <label for="">Número de gestación: </label> <input type="text">
+                <label for="">¿Fué un embarazo deseado y planeado?:</label> <input type="text">
+                <label for="">Duración del embarazo:</label> <input type="text">
+                <br>
+                <label for="">¿Durante el embarazo presentó lo siguiente?(anotar en qué mes y los datos pertinentes)</label>
+                <br>
+                <label for="">Problemas o enfermedades emocionales:</label> <input type="text">
+                <label for="">Enfermedades médicas:</label> <input type="text">
+                <label for="">Consumo de medicamentos:</label> <input type="text">
+                <label for="">Amenaza de aborto:</label> <input type="text">
+                <label for="">Desnutrición:</label> <input type="text">
+                <label for="">Exposición a Rx:</label> <input type="text">
+                <label for="">Ultrasonidos:</label> <input type="text">
+                <label for="">Consumo de drogas (alcohol, cigarros, etc.):</label> <input type="text">
+                <label for="">Otro:</label> <input type="text">
+            <br>
+            </div>
+
+            <div class="" id="5">
+                <label for="">Historia del Desarrollo</label>
+                <br>
+                <label for="">Peso al nacer(kg):</label><input type="text"> <label for="">Talla(cm):</label><input type="text">
+                <label for="">Calificación APGAR (apariencia, pulso, gedto, actividad, respiración):</label><input type="text">
+                <label for="">Especificaciones:</label><input type="text">
+                <br>
+                <label for="">Tipo de nacimiento:</label>
+                <input type="radio" name="parto">Parto normal
+                <input type="radio" name="parto">Parto inducido
+                <input type="radio" name="parto">Psicoprofilaxis
+                <input type="radio" name="parto">Cesárea programada
+                <input type="radio" name="parto">Cesárea no programada
+                <input type="radio" name="parto">Anestesia
+                <input type="radio" name="parto">Fórceps
+                <label for="">¿Lloró inmediatamente al nacer?:</label><input type="text">
+                <label for="">¿Respiró inmediatamente al nacer?:</label><input type="text">
+                <label for="">¿Estuvo en incubadora?:</label><input type="text">
+                <label for="">Complicaciones al momento de su nacimiento (sufrimiento fetal, hipoxia, etc.):</label><input type="text">
+                <br>
+                <br>
+                <label for="">Edad a la que...</label><input type="text">
+                <label for="">Sostuvo la cabeza (2 o 3m):</label><input type="text"><label for="">Subió y bajo escaleras (18m):</label><input type="text">
+                <label for="">Se sentó (6m):</label><input type="text"><label for="">Dijo palabras(18m):</label><input type="text">
+                <label for="">Se sostuvo en pie (9m):</label><input type="text"><label for="">Caminó solo (12m):</label><input type="text">
+                <label for="">(Indagar enuresis y envopresis):</label><input type="text">
+                <br>
+                <br>
+            </div>
+            <div class="" id="6"></div>
+            <div class="" id="7"></div>
+
+
+            <div class="" id="8">
+                    <!-- ASPECTOS DE PERSONALIAD Y/0 EMOCIONALES -->
+            <div> <label>El niño se muestra usualmente:</label> </div> 
+            <div> 
+                <table style="width: 25%">
+                    <tr>
+                              <td><input type="radio" name="Miedoso">Miedoso</td>
+                              <td><input type="radio" name="Berrinchudo">Berrinchudo</td>
+                              <td><input type="radio" name="Celoso">Celoso </td>
+                     </tr>
+                           <tr>
+                              <td><input type="radio" name="Rebelede">Rebelede</td> 
+                              <td><input type="radio" name="Autolastima">Se autolastima</td>
+                              <td><input type="radio" name="Agresivo">Agresivo </td>
+                           </tr>
+                   <tr>
+                            <td><input type="radio" name="Aislado">Aislado</td>
+                            <td><input type="radio" name="Nervioso">Nervioso </td>
+                            <td><input type="radio" name="Desapegado">Desapegado</td>  
+                 </table>
+            </div> 
+            <div> <label> Descripción de personalidad del niño:</label> <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+              <!-- ASPECTOS DE PERSONALIAD Y/0 EMOCIONALES TERMINAAA -->
+            <div class="" id="9"></div>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/2ff9a12d18.js" crossorigin="anonymous"></script>
+    <script src="../COVID-19/js/menu.js"></script>
+</body>
+</html>

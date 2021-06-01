@@ -8,7 +8,6 @@ btnMenu.addEventListener("click",function(){
 const subMenuBtn = document.querySelectorAll(".btn-submenu");
 for (let i = 0; i < subMenuBtn.length; i++) {
     subMenuBtn[i].addEventListener("click",function(){
-        console.log("xd");
         if(window.innerWidth < 768){
             const subMenu = this.nextElementSibling;
             const height = subMenu.scrollHeight;
