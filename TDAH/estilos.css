@@ -162,7 +162,7 @@ header img:hover{
 
 h1{
     text-align: center;
-    color: #222;
+    color: #444;
     margin: 20px 0;
 }
 
@@ -171,10 +171,12 @@ h1{
     flex-wrap: wrap;
     width: 1105px;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 .section__name{
     background: #ddd;
+    /* background: #cde3ff; */
     color: #222;
     padding: 10px 20px;
     border: 1px solid #fff;
@@ -191,34 +193,83 @@ h1{
     border: 1px solid #ccc;
 }
 
-.tdah-form__datos-personales{
+.tdah-form__datos-personales,.tdah-form__antecedentes-personales-no-patologicos,.tdah-form__antecedentes-personales-patologicos{
     padding: 0 0;
-}
-
-.input-group{
     display: flex;
     flex-wrap: wrap;
 }
 
-.input-group--grey{
-    background: #ddd;
+.input-group{
+    display: flex;
+    flex-wrap: space-between;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.input-group-table{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    margin: 15px 0;
+}
+
+.input-group-table__label{
+    padding: 0 10px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.input-group-table__input{
+    width: 100%;
+    margin-left: 120px;
+}
+
+.input-group__blue{
+    background: #e4f4fd;
+    /* background: #e7e8ea; */
+}
+
+.input-group--blue-2{
+    background: #c9e9fc;
+    /* background: #c4c5c7; */
+}
+
+.input-group--blue-3{
+    background: #e4f4fd;
+    /* background: #e7e8ea; */
 }
 
 .input-group__label{
-    flex-basis: 50%;
+    width: 100%;
     font-size: 18px;
     margin: 5px 0;
     padding-left: 10px;
 }
 
 .input-group__input{
-    flex-basis: 50%;
-    font-size: 18px;
-    margin: 7px 0;
+    width: 100%;
+    margin: 4px 15px 10px 15px;
+}
+
+.input--small{
+    display: flex;
+    width: 100%;
+    margin-top: 7px;
+}
+
+.input--small div{
+    margin-left: 10px;
+}
+
+#antecedentes-personales-no-patologicos,#antecedentes-personales-patologicos,#antecedentes-pre-peri-y-postnatales,#historia-del-desarrollo,#antecedentes-escolares,#dinamica-familiar,#aspecto-de-personalidad-emocionales{
+    display: none;
 }
 
 input[type="text"], input[type="date"]{
+    width: 100%;
     border: 1px solid #ccc;
+    height: 25px;
 }
 
 .tdah-form__datos-personales input{
