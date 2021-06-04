@@ -175,15 +175,19 @@ h1{
 }
 
 .section__name{
-    background: #ddd;
-    /* background: #cde3ff; */
+    /* background: #ddd; */
+    background: #cde3ff;
     color: #222;
     padding: 10px 20px;
     border: 1px solid #fff;
 }
 
+.section__name--selected{
+    background: #aac4e6;
+}
+
 .section__name:hover{
-    background: rgb(186, 186, 186);
+    background: #aac4e6;
     cursor: pointer;
 }
 
@@ -193,7 +197,7 @@ h1{
     border: 1px solid #ccc;
 }
 
-.tdah-form__datos-personales,.tdah-form__antecedentes-personales-no-patologicos,.tdah-form__antecedentes-personales-patologicos{
+.tdah-form__datos-personales,.tdah-form__antecedentes-personales-no-patologicos,.tdah-form__antecedentes-personales-patologicos,.tdah-form__antecedentes-pre-peri-y-postnatales{
     padding: 0 0;
     display: flex;
     flex-wrap: wrap;
@@ -210,34 +214,35 @@ h1{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 10px;
-    margin: 15px 0;
+    padding: 20px 10px 30px 10px;
 }
 
 .input-group-table__label{
     padding: 0 10px;
     width: 100%;
     font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .input-group-table__input{
     width: 100%;
-    margin-left: 120px;
+    display: flex;
+    justify-content: center;
 }
 
-.input-group__blue{
-    background: #e4f4fd;
-    /* background: #e7e8ea; */
+.tabla-color{
+    color: #fff;
+    background: #777;
 }
 
-.input-group--blue-2{
-    background: #c9e9fc;
-    /* background: #c4c5c7; */
+.input-group--color1{
+    /* background: #e4f4fd; */
+    background: #e7e8ea;
 }
 
-.input-group--blue-3{
-    background: #e4f4fd;
-    /* background: #e7e8ea; */
+.input-group--color2{
+    /* background: #c9e9fc; */
+    background: #c4c5c7;
 }
 
 .input-group__label{
@@ -274,6 +279,27 @@ input[type="text"], input[type="date"]{
 
 .tdah-form__datos-personales input{
     font-size: 17px;
+}
+
+.input-group--btn{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    padding-right: 25px;
+    padding-top: 10px;
+}
+
+.input-group--btn__guardar{
+    font-size: 1.125em;
+    margin-bottom: 10px;
+    padding: 0.6rem 1.6rem;
+    border: 3px solid #222;
+    color: #222;
+}
+
+.input-group--btn__guardar:hover{
+    color: #fff;
+    background: #222;
 }
 
 @media (max-width: 768px){

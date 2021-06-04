@@ -7,6 +7,7 @@ const antecedentesEscolares = document.getElementById("antecedentes-escolares");
 const dinamicaFamiliar = document.getElementById("dinamica-familiar");
 const aspectoDePersonalidad = document.getElementById("aspecto-de-personalidad-emocionales");
 const section = document.querySelector(".section");
+const sectionNames = document.querySelectorAll(".section__name");
 
 section.addEventListener("click",(e)=>{
     if(e.target.classList.contains("section__name")){
@@ -18,29 +19,40 @@ section.addEventListener("click",(e)=>{
         antecedentesEscolares.style.display="none";
         dinamicaFamiliar.style.display="none";
         aspectoDePersonalidad.style.display="none";
+        for (sectionName of sectionNames) {
+            sectionName.classList.remove("section__name--selected");
+        }
         if(e.target.classList.contains("section__datos-personales")){
             datosPersonales.style.display="flex";
+            e.target.classList.add("section__name--selected");
         }
         else if(e.target.classList.contains("section__antecedentes-personales-no-patologicos")){
             antecedentesNoPatologicos.style.display="flex";
+            e.target.classList.add("section__name--selected");
         }
         else if(e.target.classList.contains("section__antecedentes-personales-patologicos")){
             antecedentesPatologicos.style.display="flex";
+            e.target.classList.add("section__name--selected");
         }
         else if(e.target.classList.contains("section__antecedentes-pre-peri-y-postnatales")){
             antecedentesPostnatales.style.display="flex";
+            e.target.classList.add("section__name--selected");
         }
         else if(e.target.classList.contains("section__historia-del-desarrollo")){
             historiaDelDesarrollo.style.display="flex";
+            e.target.classList.add("section__name--selected");
         }
         else if(e.target.classList.contains("section__antecedentes-escolares")){
             antecedentesEscolares.style.display="flex";
+            e.target.classList.add("section__name--selected");
         }
         else if(e.target.classList.contains("section__dinamica-familiar")){
             dinamicaFamiliar.style.display="flex";
+            e.target.classList.add("section__name--selected");
         }
         else if(e.target.classList.contains("section__aspecto-de-personalidad-emocionales")){
             aspectoDePersonalidad.style.display="flex";
+            e.target.classList.add("section__name--selected");
         }
     }
 });
