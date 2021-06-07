@@ -49,15 +49,31 @@
         <p>Carga la imagen de radiografía o tomografía computariazada de tórax,<br>
             para la deteccion de COVID-19 u otras enfermedades respiratorias.</p>
         <form action="" method="post">
-            <input type="file" class="file" name="file" id="file" accept=".jpg,.png,.jpeg">
-            <button type="button" class="btn-file" id="btnFile">Selecciona un archivo</button>
-            <!--Previsualizacion-->
-            <div id="preview" class="styleImage"></div>
-            <!-- //mejores -->
-            <div class="btn">
-                <input type="submit" class="btn__input btn__input--btn-submit" value="Detección">
-                <input type="reset" class="btn__input btn__input--btn-reset" value="Eliminar">
+
+            <div class="btn-container">
+                <button type="button" class="btn-file" id="btnFile">Subir imagenes<span><i class="fas fa-plus"></i></span></button>
             </div>
+            <div id="wrapper">
+                <div id="container-input">
+                    <div class="wrap-file">
+                        <div class="content-icon-camera">
+                            <input type="file" id="file" name="file[]" accept="image/*" multiple />
+                        </div>
+                        <div id="preview-images">
+                            
+                        </div>
+                    </div>
+                    <div class="btn-submit">
+                        <input id="submit" type="submit" class="btn__input btn__input--btn-submit" value="Detección">
+                    </div>
+                </div>
+                <div class="preload">
+                    <img src="imagenes/preload.gif" alt="preload" />
+                </div>
+                <h2 id="success"></h2>
+            </div>
+
+
         </form>
     </div>
     <script src="https://kit.fontawesome.com/2ff9a12d18.js" crossorigin="anonymous"></script>
