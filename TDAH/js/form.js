@@ -23,35 +23,35 @@ section.addEventListener("click",(e)=>{
             sectionName.classList.remove("section__name--selected");
         }
         if(e.target.classList.contains("section__datos-personales")){
-            datosPersonales.style.display="flex";
+            datosPersonales.style.display="block";
             e.target.classList.add("section__name--selected");
         }
         else if(e.target.classList.contains("section__antecedentes-personales-no-patologicos")){
-            antecedentesNoPatologicos.style.display="flex";
+            antecedentesNoPatologicos.style.display="block";
             e.target.classList.add("section__name--selected");
         }
         else if(e.target.classList.contains("section__antecedentes-personales-patologicos")){
-            antecedentesPatologicos.style.display="flex";
+            antecedentesPatologicos.style.display="block";
             e.target.classList.add("section__name--selected");
         }
         else if(e.target.classList.contains("section__antecedentes-pre-peri-y-postnatales")){
-            antecedentesPostnatales.style.display="flex";
+            antecedentesPostnatales.style.display="block";
             e.target.classList.add("section__name--selected");
         }
         else if(e.target.classList.contains("section__historia-del-desarrollo")){
-            historiaDelDesarrollo.style.display="flex";
+            historiaDelDesarrollo.style.display="block";
             e.target.classList.add("section__name--selected");
         }
         else if(e.target.classList.contains("section__antecedentes-escolares")){
-            antecedentesEscolares.style.display="flex";
+            antecedentesEscolares.style.display="block";
             e.target.classList.add("section__name--selected");
         }
         else if(e.target.classList.contains("section__dinamica-familiar")){
-            dinamicaFamiliar.style.display="flex";
+            dinamicaFamiliar.style.display="block";
             e.target.classList.add("section__name--selected");
         }
         else if(e.target.classList.contains("section__aspecto-de-personalidad-emocionales")){
-            aspectoDePersonalidad.style.display="flex";
+            aspectoDePersonalidad.style.display="block";
             e.target.classList.add("section__name--selected");
         }
     }

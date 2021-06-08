@@ -195,27 +195,27 @@ h1{
 .tdah-form{
     width: 1105px;
     margin: auto;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
 }
 
-.tdah-form__datos-personales,.tdah-form__antecedentes-personales-no-patologicos,.tdah-form__antecedentes-personales-patologicos,.tdah-form__antecedentes-pre-peri-y-postnatales,.tdah-form__historia-del-desarrollo,.tdah-form__aspecto-depersonalidad-emocionales,.tdah-form__dinamica-familiar,.tdah-form__antecedentes-escolares{
-    padding: 0 0;
+.group{
+    padding-top: 10px;
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 0px 4px 0px 1px rgba(56, 56, 56, 0.2);
 }
 
 .input-group{
     display: flex;
     flex-wrap: space-between;
     width: 50%;
-    padding: 0 10px;
 }
 
 .input-group-table{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 10px 20px 10px;
+    padding: 20px 10px 5px 10px;
 }
 
 .table-antecedentes-escolares{
@@ -223,10 +223,8 @@ h1{
 }
 
 .input-group-table__label{
-    padding: 0 10px;
     width: 100%;
     font-size: 18px;
-    margin-bottom: 10px;
 }
 
 .input-group-table__input{
