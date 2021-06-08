@@ -170,7 +170,7 @@ h1{
 .section{
     display: flex;
     flex-wrap: wrap;
-    width: 1105px;
+    width: 1111px;
     margin: auto;
     margin-bottom: 20px;
 }
@@ -198,7 +198,7 @@ h1{
     border: 1px solid #ccc;
 }
 
-.tdah-form__datos-personales,.tdah-form__antecedentes-personales-no-patologicos,.tdah-form__antecedentes-personales-patologicos,.tdah-form__antecedentes-pre-peri-y-postnatales{
+.tdah-form__datos-personales,.tdah-form__antecedentes-personales-no-patologicos,.tdah-form__antecedentes-personales-patologicos,.tdah-form__antecedentes-pre-peri-y-postnatales,.tdah-form__historia-del-desarrollo,.tdah-form__aspecto-depersonalidad-emocionales,.tdah-form__dinamica-familiar,.tdah-form__antecedentes-escolares{
     padding: 0 0;
     display: flex;
     flex-wrap: wrap;
@@ -215,7 +215,11 @@ h1{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 10px 30px 10px;
+    padding: 20px 10px 20px 10px;
+}
+
+.table-antecedentes-escolares{
+    font-size: 18px;
 }
 
 .input-group-table__label{
@@ -270,6 +274,19 @@ h1{
 
 #antecedentes-personales-no-patologicos,#antecedentes-personales-patologicos,#antecedentes-pre-peri-y-postnatales,#historia-del-desarrollo,#antecedentes-escolares,#dinamica-familiar,#aspecto-de-personalidad-emocionales{
     display: none;
+}
+
+input{
+    outline: none;
+}
+
+input:focus{
+    outline: 2px solid #2972fa;
+}
+
+textarea{
+    resize: none;
+    margin: 10px 200px 0 200px;
 }
 
 input[type="text"], input[type="date"]{
