@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logos-left">
+            <a href="https://www.gob.mx/" target="_blank"><img class="img-gob" src="imagenes/gob.png" alt=""></a>
+            <a href="https://www.gob.mx/sep" target="_blank"><img class="img-sep" src="imagenes/sep.png" alt=""></a>
+        </div>
+        <div class="logos-right">
+            <a href="https://www.tecnm.mx/" target="_blank"><img class="img-tecnm" src="imagenes/tecnm.jpg" alt=""></a>
+            <a href="https://www.cenidet.tecnm.mx/" target="_blank"><img class="img-cenidet" src="imagenes/cenidet.jpg" alt=""></a>
+        </div>
+        <span class="nav-bar">
+            <div class="btn-menu" id="btnMenu"><i class="fas fa-bars"></i>Menú</div>
+        </span>
+        <nav class="main-nav">
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="#" class="menu__link"><i class="fas fa-home"></i>Inicio</a></li>
+                <li class="menu__item container-submenu">
+                    <a href="#" class="menu__link btn-submenu"><i class="fas fa-file-alt"></i> Formularios <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li class="menu__item"><a href="#" class="menu__link">COVID-19, neumonía viral y neumonía bacterina</a></li>
+                        <li class="menu__item"><a href="../TDAH/index.html" class="menu__link">Transtorno por déficit de atención e hiperactividad</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Lorem ipsum dolor sit amet consectetur</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a href="#" class="menu__link"><i class="fas fa-user-circle"></i></i>Iniciar sesión</a></li>
+                <li class="menu__item"><a href="#" class="menu__link"><i class="fas fa-envelope"></i></i>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-form">
+        <nav class="guide">
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i></a></li>
+                <li><i class="fas fa-angle-right"></i></li>
+                <li><a href="index.html">Covid-19 y neumonía</a></li>
+                <li><i class="fas fa-angle-right"></i></li>
+                <li><a href="form.html">Formulario</a></li>
+            </ul>
+        </nav>
+
+        <h1>Detección de COVID-19, Neumonía Bacteriana y Neumonía Viral</h1>
+        <hr/>
+
+        <legend>Se requiere ingresar los datos personales del paciente. Cumpliendo con los terminos de confidencialidad.</legend>
+
+        <form action="">
+            <div class="input-group"> 
+                <label class="input-group__label" for="">Edad del paciente:</label>
+                <div class="input-group__input">
+                    <input type="text" name="" id="" maxlength="2">
+                </div>
+            </div>
+            <div class="input-group">
+                <label class="input-group__label" for="">Peso del paciente (kg):</label>
+                <div class="input-group__input">
+                    <input type="text" name="" id="" maxlength="5">
+                </div>
+            </div>
+            <div class="input-group">
+                <label class="input-group__label" for="">Sexo del paciente:</label>
+                <div class="input-group__input">
+                    <input type="radio" name="sexo" id=""> Masculino
+                    <input type="radio" name="sexo" id=""> Femenino
+                </div>
+            </div>
+            <div class="input-group">
+                <label class="input-group__label" for="">Saturación de oxígeno (%):</label>
+                <div class="input-group__input">
+                    <input type="text" name="" id="" maxlength="5">
+                </div>
+            </div>
+            <div class="input-group">
+                <label class="input-group__label">Enfermedad:</label>
+                <div class="input-group__input">
+                    <select id="combo_enfermedad" class="combo_box" onchange="selectDinamico()">
+                        <option value="">- Seleccione enfermedad -</option>
+                        <option value="covid-19">COVID-19</option>
+                        <option value="neumonia viral">Neumonía Viral</option>
+                        <option value="neumonia bacteriana">Neumonía Bacteriana</option>
+                        <option value="sano">Sano</option>
+                    </select>
+                </div>
+            </div>
+            <!-- <div id="covid-19"> -->
+            <div class="input-group">
+                <label class="input-group__label">Fase de la enfermedad:</label>
+                <div class="input-group__input">
+                       <select id="combo_enfermedad" class="combo_box" onchange="selectDinamico()">
+                        <option value="">- Seleccione opcion -</option>
+                        <option value="critico">Crítica</option>
+                        <option value="severo">Severa</option>
+                        <option value="moderado">Moderada</option>
+                    </select>
+                </div>
+            </div>
+            <!-- </div> -->
+            <div class="input-group">   
+                <label class="input-group__label" for="">Tipo de imagen a subir:</label>
+                <div class="input-group__input">
+                    <select id="combo_imagen" class="combo_box" onchange=selectDinamico()">
+                        <option value="">- Seleccione tipo de imagen -</option>
+                        <option value="tomografia"><label>Tomografía computarizada</label></option>
+                        <option value="radiografia"><label>Radiografía de Toráx</label></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group"></div>
+        
+            <div class="btn-container">
+                <button type="button" class="btn-file btn-file-form" id="btnFile">Subir imagenes<span class="span-form"><i class="fas fa-plus"></i></span></button>
+            </div>
+
+            <div id="wrapper">
+                <div id="container-input">
+                    <div class="wrap-file">
+                        <input type="file" id="file" name="file[]" accept="image/*" multiple />
+                        <div id="preview-images">
+                            <i class="fas fa-images"></i>
+                        </div>
+                    </div>
+
+                    <!-- REMPLAZAR -->
+                    <div class="btn-submit" style="display: none">
+                        <input id="submit" type="submit" class="btn__input btn__input--btn-submit" value="Detección">
+                    </div>
+
+                </div>
+                <div class="preload">
+                    <img src="imagenes/preload.gif" alt="preload" />
+                </div>
+                <h2 id="success"></h2>
+            </div>
+
+            <div class="btn-form">
+                <input class="btn-form__input btn-form__input-reset" type="reset" value="Cancelar">
+                <input class="btn-form__input btn-form__input-submit" type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/2ff9a12d18.js" crossorigin="anonymous"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/upload.js"></script>
+</body>
+</html>

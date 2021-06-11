@@ -46,26 +46,32 @@
                 <li><a href="diagnostico.html">Diagnóstico</a></li>
             </ul>
         </nav>
-        <p>Carga la imagen de radiografía o tomografía computariazada de tórax,<br>
+            <h1>Detección de COVID-19, Neumonía Bacteriana y Neumonía Viral</h1>
+        <hr/>
+        <p>Carga la imagen o imagenes de radiografía o tomografía computariazada de tórax,<br>
             para la deteccion de COVID-19 u otras enfermedades respiratorias.</p>
         <form action="" method="post">
-
             <div class="btn-container">
                 <button type="button" class="btn-file" id="btnFile">Subir imagenes<span><i class="fas fa-plus"></i></span></button>
             </div>
             <div id="wrapper">
                 <div id="container-input">
                     <div class="wrap-file">
-                        <div class="content-icon-camera">
-                            <input type="file" id="file" name="file[]" accept="image/*" multiple />
-                        </div>
+                        <input type="file" id="file" name="file[]" accept="image/*" multiple />
                         <div id="preview-images">
-                            
+                            <i class="fas fa-images" style="display: none"></i>
                         </div>
                     </div>
-                    <div class="btn-submit">
+
+                    <!-- REMPLAZAR -->
+                    <div class="btn">
+                        <a href="deteccion.html" class=" btn__input btn__input--btn-submit">Detección</a>
+                    </div>
+                    <!-- REMPLAZAR -->
+                    <div class="btn-submit" style="display: none">
                         <input id="submit" type="submit" class="btn__input btn__input--btn-submit" value="Detección">
                     </div>
+
                 </div>
                 <div class="preload">
                     <img src="imagenes/preload.gif" alt="preload" />
@@ -78,6 +84,6 @@
     </div>
     <script src="https://kit.fontawesome.com/2ff9a12d18.js" crossorigin="anonymous"></script>
     <script src="js/menu.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/upload.js"></script>
 </body>
 </html>

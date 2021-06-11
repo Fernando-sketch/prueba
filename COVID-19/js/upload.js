@@ -6,6 +6,7 @@
 	var preload = document.querySelector('.preload');
 	var publish = document.getElementById('submit');
 	var btnFile = document.getElementById("btnFile");
+	var iconImages = document.querySelector(".fa-images");
 	var formData = new FormData();
 
 	btnFile.addEventListener("click",()=>{
@@ -13,7 +14,7 @@
 	});
 
 	file.addEventListener('change', function (e) {
-
+		iconImages.style.display="none";
 		for ( var i = 0; i < file.files.length; i++ ) {
 			var thumbnail_id = Math.floor( Math.random() * 30000 ) + '_' + Date.now();
 			createThumbnail(file, i, thumbnail_id);

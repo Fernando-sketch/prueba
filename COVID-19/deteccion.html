@@ -48,15 +48,30 @@
                 <li><a href="deteccion.html">Detección</a></li>
             </ul>
         </nav>
+        <h1>Detección de COVID-19, Neumonía Bacteriana y Neumonía Viral</h1>
+        <hr/>
         <div class="grid-deteccion">
             <div class="title-img1"><h4>Radiografía de torax</h4></div>
             <div class="title-img2"><h4>Mapa de calor generado</h4></div>
             <div id="preview" class="styleImage styleImage--img1"><img src="imagenes/imagenes/RadiografíaCOVID-19.JPG" alt=""></div>
             <div class="arrow"><i class="fas fa-long-arrow-alt-right"></i></div>
             <div id="preview" class="styleImage styleImage--img2"><img src="imagenes/imagenes/RadiografíaCOVID-19Mapa.JPG" alt=""></div>
+            <div class="range-container">
+                <h3 class="range-container__title">Resultados de detección</h3>
+                <input type="range" class="range" id="range" value="97">
+                <div class="range-container__label">
+                    <p class="normal">Normal</p>
+                    <p class="anormal">Anormal</p>
+                </div>
+                <p><b>COVID-19:</b> 99.57%</p>
+                <p><b>Neumonía Viral:</b> 0.34%</p>
+                <p><b>Neumonía Bacteriana:</b> 0.03%</p>
+                <p><b>Normal:</b> 0.06%</p>
+            </div> 
         </div>
     </div>
     <script src="https://kit.fontawesome.com/2ff9a12d18.js" crossorigin="anonymous"></script>
     <script src="js/menu.js"></script>
+    <script src="js/range.js"></script>
 </body>
 </html>
