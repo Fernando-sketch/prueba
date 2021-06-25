@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Inicio</title>
 </head>
 <body>
@@ -38,20 +40,32 @@
     </header>
 
     <main>
-        <div class="redes-sociales">
+        <!-- <div class="social-media">
             <a href="https://www.instagram.com/cenidet_oficial/" target="_blank"><img src="src/imagenes/instagram.png" alt=""></a>
             <a href="https://www.youtube.com/channel/UCppsS5lV2CKqImeHeLt5zgw" target="_blank"><img src="src/imagenes/youtube.png" alt=""></a>
             <a href="https://twitter.com/CENIDET" target="_blank"><img src="src/imagenes/twitter.png"></a>
             <a href="https://www.facebook.com/TecNMCenidet.mx/" target="_blank"><img src="src/imagenes/facebook.png" alt=""></a>
+        </div> -->
+        <div class="container-slider">
+            <div class="title">
+                <h1>Pre-diagnóstico y Monitoreo de Patologías con Técnicas<br/>de Inteligencia Artificial</h1>
+            </div>
+            <div class="slider" id="slider">
+                <div class="slider__section">
+                    <img class="slider__img" src="src/imagenes/TDAH.jpg" alt="">
+                </div>
+                <div class="slider__section">
+                    <img class="slider__img" src="src/imagenes/rayos-x1.jpg" alt="">
+                </div>
+                <div class="slider__section">
+                    <img class="slider__img" src="src/imagenes/tomografia(2).jpg" alt="">
+                </div>
+            </div>
+
+            <div class="slider__btn slider__btn--right" id="btn-right"> <i class="fas fa-chevron-right"></i> </div>
+            <div class="slider__btn slider__btn--left" id="btn-left"> <i class="fas fa-chevron-left"></i> </i></div>
         </div>
-        <div class="slider">
-            <ul>
-                <li><img src="src/imagenes/TDAH.jpg" alt=""></img></li>
-                <li><img src="src/imagenes/image.jpg" alt=""></img></li>
-                <li><img src="src/imagenes/img1.jpeg" alt=""></img></li>
-                <li><img src="src/imagenes/img3.jpg" alt=""></img></li>
-            </ul>
-        </div>
+
         <div class="content">
             <h2>¿Qué realizamos?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, veritatis velit, amet accusantium dolor dignissimos rerum totam alias fuga nostrum facere illo dolorum, esse molestiae voluptatem vero natus quaerat autem.<br/><br/></p>
@@ -63,10 +77,11 @@
     </main>
 
     <footer>
-            <p>© Copyright 2020 TecNM/CENIDET - Todos los Derechos Reservados</p>
+            <p>© Copyright 2021 TecNM/CENIDET - Todos los Derechos Reservados</p>
     </footer>
 
     <script src="https://kit.fontawesome.com/2ff9a12d18.js" crossorigin="anonymous"></script>
     <script src="src/js/menu.js"></script>
+    <script src="src/js/slider.js"></script>
 </body>
 </html>

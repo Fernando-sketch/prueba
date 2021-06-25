@@ -317,7 +317,7 @@ form {
 .btn-container{
     display: flex;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     justify-content: center;
 }
 
@@ -332,6 +332,7 @@ form {
 }
 
 .wrap-file{
+    text-align: center;
     min-height: 150px;
 }
 
@@ -444,13 +445,13 @@ form {
 .btn__input--btn-submit{
     float: right;
     margin-top: 10px;
-    border: 3px solid #21d62a;
-    color: #1bb822;
+    border: 3px solid #222;
+    color: #222;
 }
 
 .btn__input--btn-submit:hover{
     color: #fff;
-    background: #21d62a;
+    background: #222;
 }
 
 /*********************************
@@ -651,39 +652,42 @@ form input[type="text"]:focus, select:focus{
 }
 
 .btn-form{
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .btn-form__input{
     border: none;
     width: 150px;
     font-size: 18px;
-    padding: 5px 0;
+    padding: 7px 0;
 }
 
 .btn-form__input-reset{
-    color: #e43232;
     background: #fff;
-    border: 3px solid #f04242;
+    color: #222;
+    border: 3px solid #222;
     margin-right: 15px;
 }
 
 .btn-form__input-reset:hover{
     color: #fff;
-    background: #f04242;
+    background: #222;
 }
 
 .btn-form__input-submit{
-    color: rgb(41, 172, 159);
+    /* color: rgb(41, 172, 159); */
     background: #fff;
-    border: 3px solid rgb(46, 196, 182);
+    color: #222;
+    border: 3px solid #222;
+    /* border: 3px solid rgb(46, 196, 182); */
     margin-left: 15px;
 }
 
 .btn-form__input-submit:hover{
     color: #fff;
-    background: rgb(46, 196, 182);
+    background: #222;
+    /* background: rgb(46, 196, 182); */
 }
 
 .fa-images{
