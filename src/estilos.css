@@ -290,8 +290,280 @@ footer{
 }
 
 /*********************************
-********   MEDIA QUERIES   *******
+*********   LOGIN.HTNL   *********
 *********************************/
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(5, 74, 202, 0.9);
+
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+
+.caja__trasera div p,
+.caja__trasera button{
+    margin-top: 30px;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera div p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover{
+    background: #fff;
+    color: #46A2FD;
+}
+
+/*Formularios*/
+
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    /*La transicion va despues del codigo JS*/
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(5, 74, 202, 0.9);
+}
+
+.contenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: rgba(5, 74, 202, 0.9);
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+.formulario__register{
+    display: none;
+}
+
+/*********************************
+*********   LOGIN.HTNL   *********
+*********************************/
+.content-perfil{
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #345177;
+}
+
+.cabecera{
+    width: 100%;
+    background: #006699;
+}
+
+.cabecera h4{
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.foto-perfil{
+    width: 100%;
+    height: 120px;
+    padding-left: 50px;
+    display: flex;
+}
+
+.foto-perfil img{
+    height: 100%;
+    padding-top: 20px;
+}
+
+.foto-perfil div{
+    margin-left: 30px;
+    font-size: 1.25em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+    padding-top: 45px;
+    color: #345177;
+}
+
+.informacion-profesional{
+    width: 100%;
+    margin: 20px 20px;
+    border: 1px solid rgb(180, 180, 180);
+}
+
+.informacion-profesional h5{
+    padding: 10px 10px;
+    background: #676f77;
+    color: #fff;
+    font-size: 1em;
+}
+
+.informacion-profesional .datos{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.informacion-profesional .datos .input-group{
+    width: 50%;
+    padding: 10px 20px;
+}
+
+.informacion-profesional .datos label{
+    width: 100%;
+    font-size: 18px;
+}
+
+.informacion-profesional .datos input[type="text"],
+.informacion-profesional .datos select{
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+}
+
+.informacion-profesional .datos input[type="submit"]{
+    float: right;
+    margin-top: 10px;
+    font-size: 1em;
+    border: 3px solid #222;
+    color: #222;
+    background: #fff;
+    text-decoration: none;
+    padding: 0.625rem 1.2rem;
+}
+
+.informacion-profesional .datos input[type="submit"]:hover{
+    color: #fff;
+    background: #222;
+}
+
+ .pacientes{
+    width: 100%;
+    margin: 20px 20px;
+    border: 1px solid rgb(180, 180, 180);
+    height: 300px;
+}
+.pacientes h5{
+    padding: 10px 10px;
+    background: #676f77;
+    color: #fff;
+    font-size: 1em;
+}
+
+
+/*********************************
+*******   MEDIA QUERIES   ********
+*********************************/
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+
+    /*Formularios*/
+
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-register form{
+        position: relative;
+    }
+}
+
 @media (max-width: 768px){
     .nav-bar{
         clear: both;

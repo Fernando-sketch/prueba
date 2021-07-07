@@ -292,6 +292,10 @@ aside{
     border: 1px solid #fff;
 }
 
+.section__registro-sesiones{
+    padding: 10px 30px;
+}
+
 .section__name--selected{
     background: #98d6ff;
 }
@@ -396,7 +400,7 @@ aside{
     margin-left: 10px;
 }
 
-#antecedentes-personales-no-patologicos,#antecedentes-personales-patologicos,#antecedentes-pre-peri-y-postnatales,#historia-del-desarrollo,#antecedentes-escolares,#dinamica-familiar,#aspecto-de-personalidad-emocionales{
+#antecedentes-personales-no-patologicos,#antecedentes-personales-patologicos,#antecedentes-pre-peri-y-postnatales,#historia-del-desarrollo,#antecedentes-escolares,#dinamica-familiar,#aspecto-de-personalidad-emocionales,#registro-sesiones{
     display: none;
 }
 
@@ -458,6 +462,92 @@ input[type="text"], input[type="date"]{
     background: #222;
 }
 
+/*********************************
+**********   SESIONES   *********
+*********************************/
+.contenedor{
+	display: grid;
+	grid-template-columns: minmax(300px,1fr); /* Esto es para el responsive muy poco que tiene, la caja se hara pequeña hasta los 300 y maximo hasta 1 fr */
+	grid-template-rows: minmax(200px 200px) 200px ; /* Igual aca , tambien se le pueden cambiar las medidas de los 2 para  que se adapte a la pagina jsjs */
+}
+
+.cajita1{
+	background: #eeee;
+	/* box-shadow: 7px 0px 10px -12px rgba(0,0,0,0.6); */
+	display: flex;
+	flex-wrap: nowrap;  /* Para que el nombre este a lado de la web cam*/
+	grid-column: 1; /* Para acomodarlo*/
+	grid-row: 1;
+    box-shadow: 0px 5px 0px 0 rgba(56, 56, 56, 0.15);
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.cajita1-left{
+    display: flex;
+	flex-wrap: nowrap;  /* Para que el nombre este a lado de la web cam*/
+	grid-column: 1; /* Para acomodarlo*/
+	grid-row: 1;
+}
+
+.cajita1-right{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.usuario{
+	width:200px; /* Tamaño del video de la webcam*/
+    height: 150px;
+    margin-left: 20px;
+}
+
+.datos{
+	padding-left: 20px;   
+	line-height: 30px; /* Como tipo interlineado */
+    display: flex;
+    align-items: center;
+}
+
+.tablita{
+	width: 400px; /* Tamaño video de la tabla */
+	height: 200px;
+}
+
+.juego1{
+	width: 400px; /* Tamaño video del juego*/
+	height: 200px;
+}
+
+.cajavideo{
+    margin-top: 20px;
+	padding: 30px;  /* La caja del video*/
+	grid-column: 1;
+	grid-row: 2;
+	display: flex;
+	justify-content: center; /* Se centren y se ponga alado , si se hace mas chico aun no se hace para abajo, falta el responsive */
+    background: #f1f1f1;
+    box-shadow: 0px 5px 0px 0 rgba(56, 56, 56, 0.15);
+    border-radius: 10px;
+}
+
+.icon-recording{
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.icon-borde-exterior{
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.icon-borde-interior{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: red;
+    border: 12px solid #fff;
+}
 
 /*********************************
 ********   MEDIA QUERIES   *******
