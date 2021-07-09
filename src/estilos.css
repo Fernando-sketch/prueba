@@ -290,7 +290,7 @@ footer{
 }
 
 /*********************************
-*********   LOGIN.HTNL   *********
+*********   LOGIN.HTML   *********
 *********************************/
 main{
     width: 100%;
@@ -417,7 +417,7 @@ main{
 }
 
 /*********************************
-*********   LOGIN.HTNL   *********
+*********   PERFIL.HTML   ********
 *********************************/
 .content-perfil{
     width: 90%;
@@ -515,17 +515,41 @@ main{
     background: #222;
 }
 
- .pacientes{
+.pacientes{
     width: 100%;
     margin: 20px 20px;
     border: 1px solid rgb(180, 180, 180);
     height: 300px;
 }
+
 .pacientes h5{
     padding: 10px 10px;
     background: #676f77;
     color: #fff;
     font-size: 1em;
+}
+
+.pacientes .btn_contenedor{
+    clear: both;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.pacientes .btn_contenedor .btn{
+    display: inline-block;
+    font-size: 1.125em;
+    text-decoration: none;
+    margin: 0 30px;
+    border: 3px solid #222;
+    color: #222;
+    padding: 0.625rem 1.25rem;
+    border-radius: 3px;
+}
+
+.pacientes .btn_contenedor .btn:hover{
+    background: #222;
+    color: #fff;
 }
 
 
