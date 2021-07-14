@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <title>Bienvenido</title>
+    <title>Conversion</title>
 </head>
 <body>
     <header>
@@ -44,35 +44,26 @@
                 <li><i class="fas fa-angle-right"></i></li>
                 <li><a href="index.html">Robos</a></li>
                 <li><i class="fas fa-angle-right"></i></li>
-                <li><a href="diagnostico.html">Formulario</a></li>
+                <li><a href="diagnostico.html">Conversión</a></li>
             </ul>
         </nav>
 
         <form action="">
             <div class="titulo">
-                <h1>Guardado de Fotogramas</h1>
-                <hr/>
+                <h1>Conversión de videos a fotogramas</h1>
             </div>
 
-            <div class="label"><label for="">Descriptor de imagen:</label></div>
-            <div class="campos"><input type="text"></div>
-
-            <div class="label"><label for="">Tipo de imagen:</label></div>
-            <div class="campos">
-                <select name="" id="">
-                    <option value="">- Seleccione una opción -</option>
-                </select>
-            </div>
+            <label for="">Video a seleccionar</label>
 
             <div class="btn-container">
-                <button type="button" class="btn-file btn-file-form" id="btnFile">Subir imagenes<span class="span-form"><i class="fas fa-plus"></i></span></button>
+                <button type="button" class="btn-file btn-file-form" id="btnFile">Subir video<span class="span-form"><i class="fas fa-plus"></i></span></button>
             </div>
             <div id="wrapper">
                 <div id="container-input">
                     <div class="wrap-file">
                         <input type="file" id="file" name="file[]" accept="image/*" multiple style="display: none;"/>
                         <div id="preview-images"></div>
-                        <i class="fas fa-images"></i>
+                        <i class="fas fa-file-video" id="icon-upload"></i>
                     </div>
 
                     <!-- REMPLAZAR -->

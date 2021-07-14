@@ -6,7 +6,7 @@
 	var preload = document.querySelector('.preload');
 	var publish = document.getElementById('submit');
 	var btnFile = document.getElementById("btnFile");
-	var iconImages = document.querySelector(".fa-images");
+	var iconUpload = document.getElementById("icon-upload");
 	var formData = new FormData();
 
 	btnFile.addEventListener("click",()=>{
@@ -82,9 +82,9 @@
 
 	var iconDisplay = function () {
 		if(previewImages.hasChildNodes()){
-			iconImages.style.display = "none";
+			iconUpload.style.display = "none";
 		} else{
-			iconImages.style.display = "";
+			iconUpload.style.display = "";
 		}
 	}
 
