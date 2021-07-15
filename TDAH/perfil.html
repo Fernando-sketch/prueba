@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/estilos.css">
+    <title>Perfil</title>
+</head>
+<body>
+    <header>
+        <div class="logos-left">
+            <a href="https://www.gob.mx/" target="_blank"><img class="img-gob" src="src/imagenes/gob.png" alt=""></a>
+            <a href="https://www.gob.mx/sep" target="_blank"><img class="img-sep" src="src/imagenes/sep.png" alt=""></a>
+        </div>
+        <div class="logos-right">
+            <a href="https://www.tecnm.mx/" target="_blank"><img class="img-tecnm" src="src/imagenes/tecnm.jpg" alt=""></a>
+            <a href="https://www.cenidet.tecnm.mx/" target="_blank"><img class="img-cenidet" src="src/imagenes/cenidet.jpg" alt=""></a>
+        </div>
+        <span class="nav-bar">
+            <div class="btn-menu" id="btnMenu"><i class="fas fa-bars"></i>Menú</div>
+        </span>
+        <nav class="main-nav">
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="#" class="menu__link"><i class="fas fa-home"></i>Inicio</a></li>
+                <li class="menu__item container-submenu">
+                    <a href="#" class="menu__link btn-submenu"><i class="fas fa-file-alt"></i> Formularios <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li class="menu__item"><a href="#" class="menu__link">COVID-19, neumonía viral y neumonía bacterina</a></li>
+                        <li class="menu__item"><a href="../TDAH/index.html" class="menu__link">Transtorno por déficit de atención e hiperactividad</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Detección de Robos</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a href="#" class="menu__link"><i class="fas fa-user-circle"></i></i>Iniciar sesión</a></li>
+                <li class="menu__item"><a href="#" class="menu__link"><i class="fas fa-envelope"></i></i>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-perfil">
+        <div class="cabecera">
+            <h4>Mi perfil</h4>
+        </div>
+        <div class="foto-perfil">
+            <img src="src/imagenes/blank-profile-picture-973460_960_720.png">
+            <div>
+                <h3>Nombre completo</h3>
+                <h4>correo@correo.com</h4>
+            </div>
+        </div>
+        <div class="informacion-profesional">
+            <h5>Datos Profesionales</h5>
+            <div class="datos">
+                <div class="input-group">
+                    <label for="">Nombre Completo:</label>
+                    <input type="text">
+                </div>
+                <div class="input-group">
+                    <label for="">Correo:</label>
+                    <input type="text">
+                </div>
+                <div class="input-group">
+                    <label for="">Cédula profesional:</label>
+                    <input type="text">
+                </div>
+                <div class="input-group">
+                    <label for="">Especialidad:</label>
+                    <select name="Opciones_esp">
+                        <option>Psicólogo</option> 
+                        <option>Neurólogo</option> 
+                        <option>Neuropediatra</option> 
+                    </select>
+                </div>
+                <div class="input-group">
+                </div>
+                <div class="input-group">
+                    <input type="submit" value="Actualizar">
+                </div>
+            </div>
+        </div>
+        <div class="pacientes">
+            <h5>Datos pacientes </h5>
+            <div class="btn_contenedor">
+                <a href="TDAH/form.html" class="btn">Registrar paciente</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/2ff9a12d18.js" crossorigin="anonymous"></script>
+    <script src="../COVID-19/js/menu.js"></script>
+</body>
+</html>

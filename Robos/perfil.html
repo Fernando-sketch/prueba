@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/estilos.css">
+    <link rel="stylesheet" href="estilos.css">
     <title>Perfil</title>
 </head>
 <body>
     <header>
         <div class="logos-left">
-            <a href="https://www.gob.mx/" target="_blank"><img class="img-gob" src="src/imagenes/gob.png" alt=""></a>
-            <a href="https://www.gob.mx/sep" target="_blank"><img class="img-sep" src="src/imagenes/sep.png" alt=""></a>
+            <a href="https://www.gob.mx/" target="_blank"><img class="img-gob" src="../src/imagenes/gob.png" alt=""></a>
+            <a href="https://www.gob.mx/sep" target="_blank"><img class="img-sep" src="../src/imagenes/sep.png" alt=""></a>
         </div>
         <div class="logos-right">
-            <a href="https://www.tecnm.mx/" target="_blank"><img class="img-tecnm" src="src/imagenes/tecnm.jpg" alt=""></a>
-            <a href="https://www.cenidet.tecnm.mx/" target="_blank"><img class="img-cenidet" src="src/imagenes/cenidet.jpg" alt=""></a>
+            <a href="https://www.tecnm.mx/" target="_blank"><img class="img-tecnm" src="../src/imagenes/tecnm.jpg" alt=""></a>
+            <a href="https://www.cenidet.tecnm.mx/" target="_blank"><img class="img-cenidet" src="../src/imagenes//cenidet.jpg" alt=""></a>
         </div>
         <span class="nav-bar">
             <div class="btn-menu" id="btnMenu"><i class="fas fa-bars"></i>Menú</div>
@@ -42,10 +42,10 @@
             <h4>Mi perfil</h4>
         </div>
         <div class="foto-perfil">
-            <img src="src/imagenes/blank-profile-picture-973460_960_720.png">
+            <img src="../src/imagenes/blank-profile-picture-973460_960_720.png">
             <div>
                 <h3>Nombre completo</h3>
-                <h4>Usuario</h4>
+                <h4>correo@correo.com</h4>
             </div>
         </div>
         <div class="informacion-profesional">
@@ -60,33 +60,40 @@
                     <input type="text">
                 </div>
                 <div class="input-group">
-                    <label for="">Cédula profesional:</label>
-                    <input type="text">
-                </div>
-                <div class="input-group">
-                    <label for="">Especialidad:</label>
-                    <select name="Opciones_esp">
-                        <option>Psicólogo</option> 
-                        <option>Neurólogo</option> 
-                        <option>Neuropediatra</option> 
-                    </select>
-                </div>
-                <div class="input-group">
                 </div>
                 <div class="input-group">
                     <input type="submit" value="Actualizar">
                 </div>
             </div>
         </div>
-        <div class="pacientes">
-            <h5>Datos pacientes </h5>
-            <div class="btn_contenedor">
-                <a href="TDAH/form.html" class="btn">Registrar paciente</a>
+        <div class="archivos">
+            <h5>Archivos</h5>
+            <div class="archivos-contenedor">
+                <div>
+                    <i class="far fa-folder"></i>
+                    <label for=""><br>Escenas normales</label>
+                </div>
+                <div>
+                    <i class="far fa-folder"></i>
+                    <label for=""><br>Escenas antes de crimen</label>
+                </div>
+                <div>
+                    <i class="far fa-folder"></i>
+                    <label for=""><br>Escenas durante el crimen</label>
+                </div>
+                <div>
+                    <i class="far fa-folder"></i>
+                    <label for=""><br>Escenas despues del crimen</label>
+                </div>
+                <div class="btn_contenedor">
+                    <a href="subir-imagenes.html" class="btn">Añadir imagenes</a>
+                </div>
             </div>
         </div>
     </div>
 
     <script src="https://kit.fontawesome.com/2ff9a12d18.js" crossorigin="anonymous"></script>
+    <script src="js/perfil.js"></script>
     <script src="../COVID-19/js/menu.js"></script>
 </body>
 </html>

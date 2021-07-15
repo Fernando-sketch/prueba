@@ -135,50 +135,6 @@ header img:hover{
 }
 
 /*********************************
-******    DISEÑO VIDEOS  *********
-*********************************/
-#c {
-    position: absolute;
-    top: 70%;
-    width: 800px;
-    height: 200px; 
-    left: 50%;
-    margin-left: -400px;
-    margin-top: -130px;
-}
-
- .disevideo{
-    width: 25%;
-    list-style-type: none;
-    position: absolute;
-    top: 0;
-    padding: 20px;
-    height: 200px; 
-    opacity: 0;
-    padding-top: 40px;
-    text-align: center;
-    transition: 1s opacity; 
-}
-
-.active {
-    opacity: 1;
-}
-
-p {
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #646566;
-    line-height: 1.5em;
-}
-
-iframe{
-    width: 100%;
-    height: 50%;
-    
-}
-
-
-/*********************************
 ************   GUIA   ************
 *********************************/
 .guide{
@@ -285,39 +241,196 @@ iframe{
 }
 
 /*********************************
-**********  FORM.HTML   **********
+*********   PERFIL.HTML   ********
 *********************************/
-.content-form{
-    max-width: 1600px;
+.content-perfil{
     width: 90%;
+    max-width: 1600px;
     margin: auto;
-}
-
-.content-form form{
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    border: 1px solid #345177;
 }
 
-.titulo{
+.cabecera{
+    width: 100%;
+    background: #006699;
+}
+
+.cabecera h4{
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.foto-perfil{
+    width: 100%;
+    height: 120px;
+    padding-left: 50px;
+    display: flex;
+}
+
+.foto-perfil img{
+    height: 100%;
+    padding-top: 20px;
+}
+
+.foto-perfil div{
+    margin-left: 30px;
+    font-size: 1.25em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+    padding-top: 45px;
+    color: #345177;
+}
+
+.informacion-profesional{
+    width: 100%;
+    margin: 20px 20px;
+    border: 1px solid rgb(180, 180, 180);
+}
+
+.informacion-profesional h5{
+    padding: 10px 10px;
+    background: #676f77;
+    color: #fff;
+    font-size: 1em;
+}
+
+.informacion-profesional .datos{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.informacion-profesional .datos .input-group{
+    width: 50%;
+    padding: 10px 20px;
+}
+
+.informacion-profesional .datos label{
+    width: 100%;
+    font-size: 18px;
+}
+
+.informacion-profesional .datos input[type="text"],
+.informacion-profesional .datos select{
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+}
+
+.informacion-profesional .datos input[type="submit"]{
+    float: right;
+    margin-top: 10px;
+    font-size: 1em;
+    border: 3px solid #222;
+    color: #222;
+    background: #fff;
+    text-decoration: none;
+    padding: 0.625rem 1.2rem;
+}
+
+.informacion-profesional .datos input[type="submit"]:hover{
+    color: #fff;
+    background: #222;
+}
+
+.archivos{
+    width: 100%;
+    margin: 20px 20px;
+    border: 1px solid rgb(180, 180, 180);
+    min-height: 300px;
+}
+
+.archivos h5{
+    padding: 10px 10px;
+    background: #676f77;
+    color: #fff;
+    font-size: 1em;
+}
+
+.archivos .btn_contenedor{
+    clear: both;
     width: 100%;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    color: #111;
+}
+
+.archivos .btn_contenedor .btn{
+    display: inline-block;
+    font-size: 1em;
+    text-decoration: none;
+    margin-top: 50px;
+    border: 3px solid #222;
+    color: #222;
+    padding: 0.625rem 1.25rem;
+    border-radius: 3px;
+}
+
+.archivos .btn_contenedor .btn:hover{
+    background: #222;
+    color: #fff;
+}
+
+.archivos .archivos-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    min-height: 300px;
+}
+
+
+.archivos-contenedor div{
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+.archivos-contenedor div label{
+    color: #222;
+}
+
+.fa-folder,
+.fa-folder-open{
+    color: #444;
+    margin-bottom: 5px;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+/*********************************
+****  subir-imagenes.HTML   *****
+*********************************/
+.title-main{
+    color: #222;
+    text-align: center;
+}
+
+.tipo-escenas{
+    margin-top: 20px;
+}
+
+.tipo-escenas label{
+    color: #333;
+    font-size: 23px;
     font-weight: bold;
 }
 
-.titulo h1{
-    margin-bottom: 10px;
+.checkbox{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-label{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 1.4em;
+.checkbox__input{
+    display: inline-block;
+    margin: 0 20px;
     color: #444;
+    font-size: 18px;
 }
 
 .btn-file{
@@ -325,7 +438,7 @@ label{
     border: none;
     color: #fff;
     font-size: 18px;
-    padding: 15px 0 15px 15px;
+    padding: 15px 0 15px 10px;
     border-radius: 5px;
 }
 
@@ -335,8 +448,8 @@ label{
 
 .btn-container span{
     background: #2e6fe7;
-    margin-left: 15px;
-    padding: 15px 22px;
+    margin-left: 10px;
+    padding: 15px 20px;
     font-size: 18px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -349,13 +462,8 @@ label{
 .btn-container{
     display: flex;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     justify-content: center;
-}
-
-.brn-form{
-    margin-top: 30px;
-    margin-bottom: 20px;
 }
 
 #wrapper {
@@ -447,15 +555,32 @@ label{
 	cursor: pointer;
 }
 
-.fa-file-video{
+#container-input #publish {
+	padding: 15px 35px;
+	font-size: 1.1em;
+	float: right;
+	border: none;
+	cursor: pointer;
+	background-color: #8ECA67;
+	color: #FFF;
+}
+
+#container-input #publish:hover {
+	background-color: #6EAD45;
+}
+
+.fa-images{
     margin-top: 30px;
     font-size: 80px;
     color: rgba(0,0,0,0.3);
 }
 
+
 .btn-form{
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-form__input{
@@ -471,7 +596,6 @@ label{
     color: #222;
     border: 3px solid #222;
     /* border: 3px solid rgb(46, 196, 182); */
-    margin-left: 15px;
 }
 
 .btn-form__input-submit:hover{
@@ -480,54 +604,30 @@ label{
     /* background: rgb(46, 196, 182); */
 }
 
-.btn-form{
-    margin-top: 30px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.escenas-upload{
+    margin-bottom: 50px;
+    transition: 5s ease;
 }
 
 /*********************************
-*******  RESULTADOS.HTML   *******
+*******  GALERIA.HTML   *******
 *********************************/
-.content-resultados{
-    max-width: 1600px;
-    width: 90%;
-    margin: auto;
-}
-
-.search-videos{
-    margin-top: 50px;
-    text-align: center;
-}
-
-.search-videos select{
-    height: 25px;
-    font-size: 19px;
-    color: #333;
-    width: 140px;
-    outline: none;
-    margin-left: 10px;
-    margin-bottom: 15px;
-}
-
-.escena{
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.escena__imagenes{
-    margin-top: 10px;
-    display: flex; 
-    height: 100px;
-    width: 100%;
-    gap: 20px;
+.galeria-container{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 25px;
+    margin: 30px 0;
 }
 
-.escena__imagenes img{
-    height: 100%;
-    width: 200px;
+.galeria-container img{
+    height: 220px;
+    width: 220px;
+    transition: width 1s, height 1s, transform 1s;
+}
+
+.galeria-container img:hover{
+    transform : scale(1.05);
 }
 
 /*********************************

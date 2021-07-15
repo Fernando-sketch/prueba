@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Subir imagenes</title>
+</head>
+<body>
+    <header>
+        <div class="logos-left">
+            <a href="https://www.gob.mx/" target="_blank"><img class="img-gob" src="../COVID-19/imagenes/gob.png" alt=""></a>
+            <a href="https://www.gob.mx/sep" target="_blank"><img class="img-sep" src="../COVID-19/imagenes/sep.png" alt=""></a>
+        </div>
+        <div class="logos-right">
+            <a href="https://www.tecnm.mx/" target="_blank"><img class="img-tecnm" src="../COVID-19/imagenes/tecnm.jpg" alt=""></a>
+            <a href="https://www.cenidet.tecnm.mx/" target="_blank"><img class="img-cenidet" src="../COVID-19/imagenes/cenidet.jpg" alt=""></a>
+        </div>
+        <span class="nav-bar">
+            <div class="btn-menu" id="btnMenu"><i class="fas fa-bars"></i>Menú</div>
+        </span>
+        <nav class="main-nav">
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="#" class="menu__link"><i class="fas fa-home"></i>Inicio</a></li>
+                <li class="menu__item container-submenu">
+                    <a href="#" class="menu__link btn-submenu"><i class="fas fa-file-alt"></i> Formularios <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li class="menu__item"><a href="#" class="menu__link">COVID-19, neumonía viral y neumonía bacterina</a></li>
+                        <li class="menu__item"><a href="../TDAH/index.html" class="menu__link">Transtorno por déficit de atención e hiperactividad</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Detección de Robos</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a href="#" class="menu__link"><i class="fas fa-user-circle"></i></i>Iniciar sesión</a></li>
+                <li class="menu__item"><a href="#" class="menu__link"><i class="fas fa-envelope"></i></i>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content-main">
+        <nav class="guide">
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i></a></li>
+                <li><i class="fas fa-angle-right"></i></li>
+                <li><a href="index.html">Robos</a></li>
+                <li><i class="fas fa-angle-right"></i></li>
+                <li><a href="">Subida de imagenes</a></li>
+            </ul>
+        </nav>
+
+
+        <h1 class="title-main">Subir imagenes</h1>
+        <div class="tipo-escenas">
+            <label for="">Seleccione el tipo de escena:<br></label>
+            <div class="checkbox" id="checkbox">
+                <div class="checkbox__input"><input id="checkbox-escenas-normales" type="checkbox"><span> Escenas normales</span></div>
+                <div class="checkbox__input"><input id="checkbox-escenas-antes-de-crimen" type="checkbox"><span> Escenas antes de crimen</span></div>
+                <div class="checkbox__input"><input id="checkbox-escenas-durante-el-crimen" type="checkbox"><span> Escenas durante el crimen</span></div>
+                <div class="checkbox__input"><input id="checkbox-escenas-despues-del-crimen" type="checkbox"><span> Escenas despues del crimen</span></div>
+            </div>
+        </div>
+
+        <div class="escenas-upload escenas-normales" id="escenas-normales" style="display: none;">
+            <h2>Escenas normales:</h2>
+
+            <div class="btn-container">
+                <button type="button" class="btn-file btn-file-form" id="btnFile">Subir imagenes<span class="span-form"><i class="fas fa-plus"></i></span></button>
+            </div>
+
+            <div id="wrapper">
+                <div id="container-input">
+                    <div class="wrap-file">
+                        <input type="file" id="file" name="file[]" accept="image/*" multiple hidden/>
+                        <div id="preview-images"></div>
+                        <i class="fas fa-images" id="icon-upload"></i>
+                    </div>
+
+                    <!-- REMPLAZAR -->
+                    <div class="btn-submit" style="display: none">
+                        <input id="submit" type="submit" class="btn__input btn__input--btn-submit" value="Detección">
+                    </div>
+
+                </div>
+                <h2 id="success"></h2>
+            </div>
+        </div>
+        
+        <div class="escenas-upload escenas-antes-de-crimen" id="escenas-antes-de-crimen" style="display: none;">
+            <h2>Escenas antes de crimen:</h2>
+
+            <div class="btn-container">
+                <button type="button" class="btn-file btn-file-form" id="btnFile">Subir imagenes<span class="span-form"><i class="fas fa-plus"></i></span></button>
+            </div>
+
+            <div id="wrapper">
+                <div id="container-input">
+                    <div class="wrap-file">
+                        <input type="file" id="file" name="file[]" accept="image/*" multiple hidden/>
+                        <div id="preview-images"></div>
+                        <i class="fas fa-images" id="icon-upload"></i>
+                    </div>
+
+                    <!-- REMPLAZAR -->
+                    <div class="btn-submit" style="display: none">
+                        <input id="submit" type="submit" class="btn__input btn__input--btn-submit" value="Detección">
+                    </div>
+
+                </div>
+                <h2 id="success"></h2>
+            </div>
+        </div>
+
+        <div class="escenas-upload escenas-durante-el-crimen" id="escenas-durante-el-crimen" style="display: none;">
+            <h2>Escenas durante el crimen:</h2>
+
+            <div class="btn-container">
+                <button type="button" class="btn-file btn-file-form" id="btnFile">Subir imagenes<span class="span-form"><i class="fas fa-plus"></i></span></button>
+            </div>
+
+            <div id="wrapper">
+                <div id="container-input">
+                    <div class="wrap-file">
+                        <input type="file" id="file" name="file[]" accept="image/*" multiple hidden/>
+                        <div id="preview-images"></div>
+                        <i class="fas fa-images" id="icon-upload"></i>
+                    </div>
+
+                    <!-- REMPLAZAR -->
+                    <div class="btn-submit" style="display: none">
+                        <input id="submit" type="submit" class="btn__input btn__input--btn-submit" value="Detección">
+                    </div>
+
+                </div>
+                <h2 id="success"></h2>
+            </div>
+        </div>
+
+        <div class="escenas-upload escenas-despues-del-crimen" id="escenas-despues-del-crimen" style="display: none;">
+            <h2>Escenas despues del crimen:</h2>
+
+            <div class="btn-container">
+                <button type="button" class="btn-file btn-file-form" id="btnFile">Subir imagenes<span class="span-form"><i class="fas fa-plus"></i></span></button>
+            </div>
+
+            <div id="wrapper">
+                <div id="container-input">
+                    <div class="wrap-file">
+                        <input type="file" id="file" name="file[]" accept="image/*" multiple hidden/>
+                        <div id="preview-images"></div>
+                        <i class="fas fa-images" id="icon-upload"></i>
+                    </div>
+
+                    <!-- REMPLAZAR -->
+                    <div class="btn-submit" style="display: none">
+                        <input id="submit" type="submit" class="btn__input btn__input--btn-submit" value="Detección">
+                    </div>
+
+                </div>
+                <h2 id="success"></h2>
+            </div>
+        </div>
+
+        <div class="btn-form" style="display: none;">
+            <input class="btn-form__input btn-form__input-submit" type="submit" value="Enviar">
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/2ff9a12d18.js" crossorigin="anonymous"></script>
+    <script src="../COVID-19/js/upload.js"></script>
+    <script src="js/subir-imagenes.js"></script>
+    <script src="../COVID-19/js/menu.js"></script>
+</body>
+</html>
